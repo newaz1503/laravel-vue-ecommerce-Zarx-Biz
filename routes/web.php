@@ -18,6 +18,7 @@ use App\Http\Controllers\Admin\DashboardController;
 
 
 Route::get('/', [FrontendController::class, 'index'])->name('home');
+Route::post('/add-to-cart', [FrontendController::class, 'addToCart'])->name('add.cart');
 
 Auth::routes();
 

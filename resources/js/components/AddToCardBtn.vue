@@ -12,17 +12,34 @@ export default {
 
   data(){
     return{
-        
+       
     }
   },
-  props:['product_id','user_id'],
+  props:['product_id','user_id','price'],
   methods:{
-    addToCarttt(){
-console.log(this.product_id, this.user_id);
+    async addToCarttt(){
+    
         if(this.user_id == 0){
           this.$toast.error({
               title:'Error',
               message:'You need to login first'
+          })
+          
+        }else{
+          axios.post('/add-to-cart', {
+            productId : this.product_id,
+            userId : this.user_id,
+            price: this.price
+          })
+          .then((res) => {
+            console.log(res);
+              this.$toast.success({
+                title:'Success',
+                message: res.data.msg
+              })
+          })
+          .catch((err) => {
+            console.log(err);
           })
         }
     }

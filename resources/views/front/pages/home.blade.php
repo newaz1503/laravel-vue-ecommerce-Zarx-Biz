@@ -175,7 +175,7 @@
                                     
                                                     <span class="discount-price">{{$product['original_price']}}</span>
                                                 </div>
-                                                <add-to-cart-btn product_id="{{$product['id']}}" user_id = {{auth()->user()->id ?? 0}} />
+                                                <add-to-cart-btn product_id="{{$product['id']}}" user_id ="{{auth()->user()->id ?? 0}}" price="{{$product['selling_price']}}" />
                                             </div> <!-- single product items -->
                                         </div>
                                     @endforeach

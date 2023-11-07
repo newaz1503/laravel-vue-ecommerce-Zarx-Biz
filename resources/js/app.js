@@ -3,9 +3,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue').default;
-
+//vue toastr notification
 import CxltToastr from 'cxlt-vue2-toastr'
-
 var toastrConfigs = {
     position: 'top right',
     progressBar: true,

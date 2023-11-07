@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Front;
 
+use App\Models\Cart;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -17,5 +18,22 @@ class FrontendController extends Controller
         $data['storage_products']= Product::where('status',1)->whereBetween('id',[41,50])->get()->toArray();
         return view('front.pages.home', compact('data'));
         
+    }
+    public function addToCart(Request $request){
+        $request->validate([
+            'productId'=> 'required',
+            'userId'=> 'required',
+            'price' =>'required'
+        ]);
+        $cart = new Cart();
+        $cart->product_id = $request->productId;
+        $cart->user_id = $request->userId;
+        $cart->quantity = 1;
+        $cart->price = $request->price;
+        $cart->save();
+        return response()->json([
+            'msg' => 'Product Added Successfully'
+        ] ,200);
+
     }
 }

@@ -96,11 +96,21 @@
     <!--====== Main js ======-->
     <script src="{{asset('front/js/')}}/main.js"></script>
     @auth()
-        <script> window.name = '{{Auth::user()->name}}';</script>
-        <script> window.baseUrl = '{{url('/')}}';</script>
-        <script> window.publicPath = '{{url('/')}}/public';</script>
-        <script> window.storagePath = 'storage/app/public';</script>
-        <script> window.token = '{{@csrf_token()}}';</script>
+        <script>
+            window.name = '{{Auth::user()->name}}';
+         </script>
+        <script> 
+            window.baseUrl = '{{url('/')}}';
+        </script>
+        <script> 
+            window.publicPath = '{{url('/')}}/public';
+        </script>
+        <script> 
+            window.storagePath = 'storage/app/public';
+        </script>
+        <script> 
+            window.token = '{{@csrf_token()}}';
+        </script>
     @endauth
    
     @stack('script')
