@@ -39,6 +39,7 @@
     
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{asset('front/css/')}}/responsive.css">
+    <style src="cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr.css"></style>
     @stack('css')
   
 </head>
@@ -46,31 +47,30 @@
 <body>
    
     <!--====== PRELOADER PART START ======-->
-    
-    <div class="preloader">
-        <div class="spin">
-            <div class="cube1"></div>
-            <div class="cube2"></div>
+    <div id="app">
+        <div class="preloader">
+            <div class="spin">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
         </div>
+        
+        @include('front.layouts.partials.header')
+        
+        
+        @yield('content')
+      
+        @include('front.layouts.partials.footer')
     </div>
-    
-    
-    @include('front.layouts.partials.header')
-    
-    
-    @yield('content')
   
     
-    @include('front.layouts.partials.footer')
-    
- 
     
     <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
     
     <!--====== BACK TO TOP PART ENDS ======-->
     
     
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 
     <!--====== jquery js ======-->
     <script src="{{asset('front/js/')}}/vendor/modernizr-3.6.0.min.js"></script>
@@ -95,6 +95,14 @@
     
     <!--====== Main js ======-->
     <script src="{{asset('front/js/')}}/main.js"></script>
+    @auth()
+        <script> window.name = '{{Auth::user()->name}}';</script>
+        <script> window.baseUrl = '{{url('/')}}';</script>
+        <script> window.publicPath = '{{url('/')}}/public';</script>
+        <script> window.storagePath = 'storage/app/public';</script>
+        <script> window.token = '{{@csrf_token()}}';</script>
+    @endauth
+   
     @stack('script')
 
 </body>

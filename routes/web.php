@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Front\FrontendController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,12 +17,12 @@ use App\Http\Controllers\HomeController;
 */
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [FrontendController::class, 'index'])->name('home');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['as' => 'admin.','prefix' => 'admin/','middleware'=>'web'],function(){
+Route::group(['as' => 'admin.','prefix' => 'admin/','middleware'=>'auth'],function(){
     Route::get('dashboard', [DashboardController::class,'dashboard'])->name('dashboard');
 });
