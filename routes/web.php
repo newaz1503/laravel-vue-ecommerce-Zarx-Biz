@@ -17,9 +17,14 @@ use App\Http\Controllers\Admin\DashboardController;
 */
 
 
-Route::get('/', [FrontendController::class, 'index'])->name('home');
-Route::post('/add-to-cart', [FrontendController::class, 'addToCart'])->name('add.cart');
+Route::get('/', [FrontendController::class, 'index'])->name('front');
 
+
+Route::group(['middleware'=>'auth'],function(){
+    Route::post('/add-to-cart', [FrontendController::class, 'addToCart'])->name('add.cart');
+    Route::get('/total-cart-item', [FrontendController::class, 'getTotalCartItem'])->name('total.cart.item');
+    Route::get('/checkout', [FrontendController::class, 'checkout'])->name('checkout');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

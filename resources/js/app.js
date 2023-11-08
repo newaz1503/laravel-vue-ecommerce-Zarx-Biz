@@ -6,12 +6,12 @@ window.Vue = require('vue').default;
 //vue toastr notification
 import CxltToastr from 'cxlt-vue2-toastr'
 var toastrConfigs = {
-    position: 'top right',
+    position: 'bottom right',
     progressBar: true,
     closeButton: true,
-    showMethod: 'headShake',
-    hideMethod: 'zoomOut',
-    showDuration: 1000,
+    showMethod: 'bounceInUp',
+    hideMethod: 'bounceOutDown',
+    showDuration: 1200,
     hideDuration: 1000,
     timeOut: 1500,
     delay: 0
@@ -23,6 +23,7 @@ import 'cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr.css'
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('add-to-cart-btn', require('./components/AddToCardBtn.vue').default);
+Vue.component('cart-menu', require('./components/CartComponent.vue').default);
 
 
 /**
