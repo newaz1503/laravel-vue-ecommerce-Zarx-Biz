@@ -24,6 +24,7 @@ import 'cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr.css'
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('add-to-cart-btn', require('./components/AddToCardBtn.vue').default);
 Vue.component('cart-menu', require('./components/CartComponent.vue').default);
+Vue.component('checkout', require('./components/CheckoutComponent.vue').default);
 
 
 /**

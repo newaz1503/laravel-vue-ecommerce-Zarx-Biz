@@ -62,4 +62,24 @@ class FrontendController extends Controller
     public function checkout(){
         return view('front.pages.checkout');
     }
+    public function cartItem(){
+        $cartItems = Cart::with('products')->where('user_id', Auth::id())->get();
+        $data = [];
+        foreach($cartItems as $cartItem){
+            if($cartItem->products ->count() > 0){
+                foreach($cartItem->products as $product){
+                    if($product->id == $cartItem->product_id){
+                        $data['name'] = $product->name;
+                        $data['selling_price'] = $product->selling_price;
+                        $data['total'] = $product->selling_price * $product->quantity;
+                    }                   
+                }
+            }
+        }
+        return $data;
+
+        return response()->json([
+            'cartItems' => $cartItems
+        ]);
+    }
 }

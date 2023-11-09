@@ -11,4 +11,8 @@ class Cart extends Model
     protected $table ='carts';
     protected $primaryKey = 'id';
     protected $guarded = [];
+
+    public function products(){
+        return $this->hasMany(Product::class, 'id','product_id');
+    }
 }

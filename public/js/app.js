@@ -5169,6 +5169,58 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CheckoutComponent.vue?vue&type=script&lang=js":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CheckoutComponent.vue?vue&type=script&lang=js ***!
+  \***********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return e; }; var t, e = {}, r = Object.prototype, n = r.hasOwnProperty, o = Object.defineProperty || function (t, e, r) { t[e] = r.value; }, i = "function" == typeof Symbol ? Symbol : {}, a = i.iterator || "@@iterator", c = i.asyncIterator || "@@asyncIterator", u = i.toStringTag || "@@toStringTag"; function define(t, e, r) { return Object.defineProperty(t, e, { value: r, enumerable: !0, configurable: !0, writable: !0 }), t[e]; } try { define({}, ""); } catch (t) { define = function define(t, e, r) { return t[e] = r; }; } function wrap(t, e, r, n) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype), c = new Context(n || []); return o(a, "_invoke", { value: makeInvokeMethod(t, r, c) }), a; } function tryCatch(t, e, r) { try { return { type: "normal", arg: t.call(e, r) }; } catch (t) { return { type: "throw", arg: t }; } } e.wrap = wrap; var h = "suspendedStart", l = "suspendedYield", f = "executing", s = "completed", y = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var p = {}; define(p, a, function () { return this; }); var d = Object.getPrototypeOf, v = d && d(d(values([]))); v && v !== r && n.call(v, a) && (p = v); var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p); function defineIteratorMethods(t) { ["next", "throw", "return"].forEach(function (e) { define(t, e, function (t) { return this._invoke(e, t); }); }); } function AsyncIterator(t, e) { function invoke(r, o, i, a) { var c = tryCatch(t[r], t, o); if ("throw" !== c.type) { var u = c.arg, h = u.value; return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) { invoke("next", t, i, a); }, function (t) { invoke("throw", t, i, a); }) : e.resolve(h).then(function (t) { u.value = t, i(u); }, function (t) { return invoke("throw", t, i, a); }); } a(c.arg); } var r; o(this, "_invoke", { value: function value(t, n) { function callInvokeWithMethodAndArg() { return new e(function (e, r) { invoke(t, n, e, r); }); } return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(e, r, n) { var o = h; return function (i, a) { if (o === f) throw new Error("Generator is already running"); if (o === s) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var c = n.delegate; if (c) { var u = maybeInvokeDelegate(c, n); if (u) { if (u === y) continue; return u; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (o === h) throw o = s, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = f; var p = tryCatch(e, r, n); if ("normal" === p.type) { if (o = n.done ? s : l, p.arg === y) continue; return { value: p.arg, done: n.done }; } "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg); } }; } function maybeInvokeDelegate(e, r) { var n = r.method, o = e.iterator[n]; if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y; var i = tryCatch(o, e.iterator, r.arg); if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y; var a = i.arg; return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y); } function pushTryEntry(t) { var e = { tryLoc: t[0] }; 1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e); } function resetTryEntry(t) { var e = t.completion || {}; e.type = "normal", delete e.arg, t.completion = e; } function Context(t) { this.tryEntries = [{ tryLoc: "root" }], t.forEach(pushTryEntry, this), this.reset(!0); } function values(e) { if (e || "" === e) { var r = e[a]; if (r) return r.call(e); if ("function" == typeof e.next) return e; if (!isNaN(e.length)) { var o = -1, i = function next() { for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next; return next.value = t, next.done = !0, next; }; return i.next = i; } } throw new TypeError(_typeof(e) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), o(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) { var e = "function" == typeof t && t.constructor; return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name)); }, e.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t; }, e.awrap = function (t) { return { __await: t }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () { return this; }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(wrap(t, r, n, o), i); return e.isGeneratorFunction(r) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () { return this; }), define(g, "toString", function () { return "[object Generator]"; }), e.keys = function (t) { var e = Object(t), r = []; for (var n in e) r.push(n); return r.reverse(), function next() { for (; r.length;) { var t = r.pop(); if (t in e) return next.value = t, next.done = !1, next; } return next.done = !0, next; }; }, e.values = values, Context.prototype = { constructor: Context, reset: function reset(e) { if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0].completion; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(e) { if (this.done) throw e; var r = this; function handle(n, o) { return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o; } for (var o = this.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i.completion; if ("root" === i.tryLoc) return handle("end"); if (i.tryLoc <= this.prev) { var c = n.call(i, "catchLoc"), u = n.call(i, "finallyLoc"); if (c && u) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } else if (c) { if (this.prev < i.catchLoc) return handle(i.catchLoc, !0); } else { if (!u) throw new Error("try statement without catch or finally"); if (this.prev < i.finallyLoc) return handle(i.finallyLoc); } } } }, abrupt: function abrupt(t, e) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var o = this.tryEntries[r]; if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) { var i = o; break; } } i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null); var a = i ? i.completion : {}; return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a); }, complete: function complete(t, e) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y; }, finish: function finish(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y; } }, "catch": function _catch(t) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var r = this.tryEntries[e]; if (r.tryLoc === t) { var n = r.completion; if ("throw" === n.type) { var o = n.arg; resetTryEntry(r); } return o; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(e, r, n) { return this.delegate = { iterator: values(e), resultName: r, nextLoc: n }, "next" === this.method && (this.arg = t), y; } }, e; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      cartItems: []
+    };
+  },
+  mounted: function mounted() {},
+  methods: {
+    getCartItems: function getCartItems() {
+      var _this = this;
+      return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_0___default().get('/cart-items').then(function (res) {
+                console.log(res);
+                _this.cartItems = res.data;
+              })["catch"](function (error) {});
+            case 2:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee);
+      }))();
+    }
+  },
+  created: function created() {
+    this.getCartItems();
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js ***!
@@ -5250,6 +5302,1171 @@ render._withStripped = true;
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CheckoutComponent.vue?vue&type=template&id=ed2d7008":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CheckoutComponent.vue?vue&type=template&id=ed2d7008 ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render),
+/* harmony export */   staticRenderFns: () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _vm._m(0);
+};
+var staticRenderFns = [function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("div", {
+    staticClass: "checkout"
+  }, [_c("section", {
+    staticClass: "discount-product pt-100",
+    attrs: {
+      id: "discount-product"
+    }
+  }, [_c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "row"
+  }, [_c("div", {
+    staticClass: "col-12"
+  }, [_c("div", {
+    staticClass: "container"
+  }, [_c("div", {
+    staticClass: "title"
+  }, [_c("h4", [_vm._v("Checkout")])]), _vm._v(" "), _c("div", {
+    staticClass: "d-flex"
+  }, [_c("form", {
+    attrs: {
+      action: "",
+      method: ""
+    }
+  }, [_c("label", [_c("span", {
+    staticClass: "fname"
+  }, [_vm._v("First Name "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "fname"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", {
+    staticClass: "lname"
+  }, [_vm._v("Last Name "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "lname"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Company Name (Optional)")]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "cn"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Country "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("select", {
+    attrs: {
+      name: "selection"
+    }
+  }, [_c("option", {
+    attrs: {
+      value: "select"
+    }
+  }, [_vm._v("Select a country...")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AFG"
+    }
+  }, [_vm._v("Afghanistan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ALA"
+    }
+  }, [_vm._v("Åland Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ALB"
+    }
+  }, [_vm._v("Albania")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "DZA"
+    }
+  }, [_vm._v("Algeria")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ASM"
+    }
+  }, [_vm._v("American Samoa")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AND"
+    }
+  }, [_vm._v("Andorra")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AGO"
+    }
+  }, [_vm._v("Angola")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AIA"
+    }
+  }, [_vm._v("Anguilla")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ATA"
+    }
+  }, [_vm._v("Antarctica")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ATG"
+    }
+  }, [_vm._v("Antigua and Barbuda")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ARG"
+    }
+  }, [_vm._v("Argentina")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ARM"
+    }
+  }, [_vm._v("Armenia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ABW"
+    }
+  }, [_vm._v("Aruba")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AUS"
+    }
+  }, [_vm._v("Australia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AUT"
+    }
+  }, [_vm._v("Austria")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "AZE"
+    }
+  }, [_vm._v("Azerbaijan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BHS"
+    }
+  }, [_vm._v("Bahamas")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BHR"
+    }
+  }, [_vm._v("Bahrain")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BGD"
+    }
+  }, [_vm._v("Bangladesh")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BRB"
+    }
+  }, [_vm._v("Barbados")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BLR"
+    }
+  }, [_vm._v("Belarus")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BEL"
+    }
+  }, [_vm._v("Belgium")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BLZ"
+    }
+  }, [_vm._v("Belize")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BEN"
+    }
+  }, [_vm._v("Benin")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BMU"
+    }
+  }, [_vm._v("Bermuda")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BTN"
+    }
+  }, [_vm._v("Bhutan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BOL"
+    }
+  }, [_vm._v("\n                      Bolivia, Plurinational State of\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BES"
+    }
+  }, [_vm._v("\n                      Bonaire, Sint Eustatius and Saba\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BIH"
+    }
+  }, [_vm._v("Bosnia and Herzegovina")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BWA"
+    }
+  }, [_vm._v("Botswana")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BVT"
+    }
+  }, [_vm._v("Bouvet Island")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BRA"
+    }
+  }, [_vm._v("Brazil")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IOT"
+    }
+  }, [_vm._v("\n                      British Indian Ocean Territory\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BRN"
+    }
+  }, [_vm._v("Brunei Darussalam")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BGR"
+    }
+  }, [_vm._v("Bulgaria")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BFA"
+    }
+  }, [_vm._v("Burkina Faso")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BDI"
+    }
+  }, [_vm._v("Burundi")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KHM"
+    }
+  }, [_vm._v("Cambodia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CMR"
+    }
+  }, [_vm._v("Cameroon")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CAN"
+    }
+  }, [_vm._v("Canada")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CPV"
+    }
+  }, [_vm._v("Cape Verde")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CYM"
+    }
+  }, [_vm._v("Cayman Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CAF"
+    }
+  }, [_vm._v("Central African Republic")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TCD"
+    }
+  }, [_vm._v("Chad")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CHL"
+    }
+  }, [_vm._v("Chile")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CHN"
+    }
+  }, [_vm._v("China")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CXR"
+    }
+  }, [_vm._v("Christmas Island")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CCK"
+    }
+  }, [_vm._v("Cocos (Keeling) Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "COL"
+    }
+  }, [_vm._v("Colombia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "COM"
+    }
+  }, [_vm._v("Comoros")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "COG"
+    }
+  }, [_vm._v("Congo")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "COD"
+    }
+  }, [_vm._v("\n                      Congo, the Democratic Republic of the\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "COK"
+    }
+  }, [_vm._v("Cook Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CRI"
+    }
+  }, [_vm._v("Costa Rica")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CIV"
+    }
+  }, [_vm._v("Côte d'Ivoire")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "HRV"
+    }
+  }, [_vm._v("Croatia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CUB"
+    }
+  }, [_vm._v("Cuba")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CUW"
+    }
+  }, [_vm._v("Curaçao")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CYP"
+    }
+  }, [_vm._v("Cyprus")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CZE"
+    }
+  }, [_vm._v("Czech Republic")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "DNK"
+    }
+  }, [_vm._v("Denmark")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "DJI"
+    }
+  }, [_vm._v("Djibouti")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "DMA"
+    }
+  }, [_vm._v("Dominica")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "DOM"
+    }
+  }, [_vm._v("Dominican Republic")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ECU"
+    }
+  }, [_vm._v("Ecuador")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "EGY"
+    }
+  }, [_vm._v("Egypt")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SLV"
+    }
+  }, [_vm._v("El Salvador")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GNQ"
+    }
+  }, [_vm._v("Equatorial Guinea")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ERI"
+    }
+  }, [_vm._v("Eritrea")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "EST"
+    }
+  }, [_vm._v("Estonia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ETH"
+    }
+  }, [_vm._v("Ethiopia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "FLK"
+    }
+  }, [_vm._v("Falkland Islands (Malvinas)")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "FRO"
+    }
+  }, [_vm._v("Faroe Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "FJI"
+    }
+  }, [_vm._v("Fiji")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "FIN"
+    }
+  }, [_vm._v("Finland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "FRA"
+    }
+  }, [_vm._v("France")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GUF"
+    }
+  }, [_vm._v("French Guiana")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PYF"
+    }
+  }, [_vm._v("French Polynesia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ATF"
+    }
+  }, [_vm._v("French Southern Territories")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GAB"
+    }
+  }, [_vm._v("Gabon")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GMB"
+    }
+  }, [_vm._v("Gambia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GEO"
+    }
+  }, [_vm._v("Georgia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "DEU"
+    }
+  }, [_vm._v("Germany")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GHA"
+    }
+  }, [_vm._v("Ghana")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GIB"
+    }
+  }, [_vm._v("Gibraltar")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GRC"
+    }
+  }, [_vm._v("Greece")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GRL"
+    }
+  }, [_vm._v("Greenland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GRD"
+    }
+  }, [_vm._v("Grenada")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GLP"
+    }
+  }, [_vm._v("Guadeloupe")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GUM"
+    }
+  }, [_vm._v("Guam")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GTM"
+    }
+  }, [_vm._v("Guatemala")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GGY"
+    }
+  }, [_vm._v("Guernsey")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GIN"
+    }
+  }, [_vm._v("Guinea")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GNB"
+    }
+  }, [_vm._v("Guinea-Bissau")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GUY"
+    }
+  }, [_vm._v("Guyana")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "HTI"
+    }
+  }, [_vm._v("Haiti")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "HMD"
+    }
+  }, [_vm._v("\n                      Heard Island and McDonald Islands\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VAT"
+    }
+  }, [_vm._v("Holy See (Vatican City State)")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "HND"
+    }
+  }, [_vm._v("Honduras")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "HKG"
+    }
+  }, [_vm._v("Hong Kong")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "HUN"
+    }
+  }, [_vm._v("Hungary")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ISL"
+    }
+  }, [_vm._v("Iceland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IND"
+    }
+  }, [_vm._v("India")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IDN"
+    }
+  }, [_vm._v("Indonesia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IRN"
+    }
+  }, [_vm._v("Iran, Islamic Republic of")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IRQ"
+    }
+  }, [_vm._v("Iraq")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IRL"
+    }
+  }, [_vm._v("Ireland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "IMN"
+    }
+  }, [_vm._v("Isle of Man")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ISR"
+    }
+  }, [_vm._v("Israel")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ITA"
+    }
+  }, [_vm._v("Italy")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "JAM"
+    }
+  }, [_vm._v("Jamaica")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "JPN"
+    }
+  }, [_vm._v("Japan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "JEY"
+    }
+  }, [_vm._v("Jersey")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "JOR"
+    }
+  }, [_vm._v("Jordan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KAZ"
+    }
+  }, [_vm._v("Kazakhstan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KEN"
+    }
+  }, [_vm._v("Kenya")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KIR"
+    }
+  }, [_vm._v("Kiribati")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PRK"
+    }
+  }, [_vm._v("\n                      Korea, Democratic People's Republic of\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KOR"
+    }
+  }, [_vm._v("Korea, Republic of")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KWT"
+    }
+  }, [_vm._v("Kuwait")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KGZ"
+    }
+  }, [_vm._v("Kyrgyzstan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LAO"
+    }
+  }, [_vm._v("\n                      Lao People's Democratic Republic\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LVA"
+    }
+  }, [_vm._v("Latvia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LBN"
+    }
+  }, [_vm._v("Lebanon")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LSO"
+    }
+  }, [_vm._v("Lesotho")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LBR"
+    }
+  }, [_vm._v("Liberia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LBY"
+    }
+  }, [_vm._v("Libya")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LIE"
+    }
+  }, [_vm._v("Liechtenstein")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LTU"
+    }
+  }, [_vm._v("Lithuania")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LUX"
+    }
+  }, [_vm._v("Luxembourg")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MAC"
+    }
+  }, [_vm._v("Macao")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MKD"
+    }
+  }, [_vm._v("\n                      Macedonia, the former Yugoslav Republic of\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MDG"
+    }
+  }, [_vm._v("Madagascar")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MWI"
+    }
+  }, [_vm._v("Malawi")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MYS"
+    }
+  }, [_vm._v("Malaysia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MDV"
+    }
+  }, [_vm._v("Maldives")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MLI"
+    }
+  }, [_vm._v("Mali")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MLT"
+    }
+  }, [_vm._v("Malta")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MHL"
+    }
+  }, [_vm._v("Marshall Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MTQ"
+    }
+  }, [_vm._v("Martinique")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MRT"
+    }
+  }, [_vm._v("Mauritania")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MUS"
+    }
+  }, [_vm._v("Mauritius")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MYT"
+    }
+  }, [_vm._v("Mayotte")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MEX"
+    }
+  }, [_vm._v("Mexico")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "FSM"
+    }
+  }, [_vm._v("\n                      Micronesia, Federated States of\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MDA"
+    }
+  }, [_vm._v("Moldova, Republic of")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MCO"
+    }
+  }, [_vm._v("Monaco")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MNG"
+    }
+  }, [_vm._v("Mongolia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MNE"
+    }
+  }, [_vm._v("Montenegro")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MSR"
+    }
+  }, [_vm._v("Montserrat")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MAR"
+    }
+  }, [_vm._v("Morocco")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MOZ"
+    }
+  }, [_vm._v("Mozambique")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MMR"
+    }
+  }, [_vm._v("Myanmar")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NAM"
+    }
+  }, [_vm._v("Namibia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NRU"
+    }
+  }, [_vm._v("Nauru")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NPL"
+    }
+  }, [_vm._v("Nepal")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NLD"
+    }
+  }, [_vm._v("Netherlands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NCL"
+    }
+  }, [_vm._v("New Caledonia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NZL"
+    }
+  }, [_vm._v("New Zealand")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NIC"
+    }
+  }, [_vm._v("Nicaragua")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NER"
+    }
+  }, [_vm._v("Niger")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NGA"
+    }
+  }, [_vm._v("Nigeria")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NIU"
+    }
+  }, [_vm._v("Niue")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NFK"
+    }
+  }, [_vm._v("Norfolk Island")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MNP"
+    }
+  }, [_vm._v("Northern Mariana Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "NOR"
+    }
+  }, [_vm._v("Norway")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "OMN"
+    }
+  }, [_vm._v("Oman")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PAK"
+    }
+  }, [_vm._v("Pakistan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PLW"
+    }
+  }, [_vm._v("Palau")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PSE"
+    }
+  }, [_vm._v("\n                      Palestinian Territory, Occupied\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PAN"
+    }
+  }, [_vm._v("Panama")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PNG"
+    }
+  }, [_vm._v("Papua New Guinea")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PRY"
+    }
+  }, [_vm._v("Paraguay")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PER"
+    }
+  }, [_vm._v("Peru")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PHL"
+    }
+  }, [_vm._v("Philippines")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PCN"
+    }
+  }, [_vm._v("Pitcairn")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "POL"
+    }
+  }, [_vm._v("Poland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PRT"
+    }
+  }, [_vm._v("Portugal")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "PRI"
+    }
+  }, [_vm._v("Puerto Rico")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "QAT"
+    }
+  }, [_vm._v("Qatar")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "REU"
+    }
+  }, [_vm._v("Réunion")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ROU"
+    }
+  }, [_vm._v("Romania")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "RUS"
+    }
+  }, [_vm._v("Russian Federation")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "RWA"
+    }
+  }, [_vm._v("Rwanda")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "BLM"
+    }
+  }, [_vm._v("Saint Barthélemy")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SHN"
+    }
+  }, [_vm._v("\n                      Saint Helena, Ascension and Tristan da Cunha\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "KNA"
+    }
+  }, [_vm._v("Saint Kitts and Nevis")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LCA"
+    }
+  }, [_vm._v("Saint Lucia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "MAF"
+    }
+  }, [_vm._v("Saint Martin (French part)")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SPM"
+    }
+  }, [_vm._v("Saint Pierre and Miquelon")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VCT"
+    }
+  }, [_vm._v("\n                      Saint Vincent and the Grenadines\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "WSM"
+    }
+  }, [_vm._v("Samoa")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SMR"
+    }
+  }, [_vm._v("San Marino")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "STP"
+    }
+  }, [_vm._v("Sao Tome and Principe")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SAU"
+    }
+  }, [_vm._v("Saudi Arabia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SEN"
+    }
+  }, [_vm._v("Senegal")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SRB"
+    }
+  }, [_vm._v("Serbia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SYC"
+    }
+  }, [_vm._v("Seychelles")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SLE"
+    }
+  }, [_vm._v("Sierra Leone")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SGP"
+    }
+  }, [_vm._v("Singapore")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SXM"
+    }
+  }, [_vm._v("Sint Maarten (Dutch part)")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SVK"
+    }
+  }, [_vm._v("Slovakia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SVN"
+    }
+  }, [_vm._v("Slovenia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SLB"
+    }
+  }, [_vm._v("Solomon Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SOM"
+    }
+  }, [_vm._v("Somalia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ZAF"
+    }
+  }, [_vm._v("South Africa")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SGS"
+    }
+  }, [_vm._v("\n                      South Georgia and the South Sandwich Islands\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SSD"
+    }
+  }, [_vm._v("South Sudan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ESP"
+    }
+  }, [_vm._v("Spain")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "LKA"
+    }
+  }, [_vm._v("Sri Lanka")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SDN"
+    }
+  }, [_vm._v("Sudan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SUR"
+    }
+  }, [_vm._v("Suriname")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SJM"
+    }
+  }, [_vm._v("Svalbard and Jan Mayen")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SWZ"
+    }
+  }, [_vm._v("Swaziland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SWE"
+    }
+  }, [_vm._v("Sweden")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "CHE"
+    }
+  }, [_vm._v("Switzerland")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "SYR"
+    }
+  }, [_vm._v("Syrian Arab Republic")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TWN"
+    }
+  }, [_vm._v("Taiwan, Province of China")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TJK"
+    }
+  }, [_vm._v("Tajikistan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TZA"
+    }
+  }, [_vm._v("Tanzania, United Republic of")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "THA"
+    }
+  }, [_vm._v("Thailand")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TLS"
+    }
+  }, [_vm._v("Timor-Leste")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TGO"
+    }
+  }, [_vm._v("Togo")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TKL"
+    }
+  }, [_vm._v("Tokelau")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TON"
+    }
+  }, [_vm._v("Tonga")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TTO"
+    }
+  }, [_vm._v("Trinidad and Tobago")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TUN"
+    }
+  }, [_vm._v("Tunisia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TUR"
+    }
+  }, [_vm._v("Turkey")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TKM"
+    }
+  }, [_vm._v("Turkmenistan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TCA"
+    }
+  }, [_vm._v("Turks and Caicos Islands")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "TUV"
+    }
+  }, [_vm._v("Tuvalu")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "UGA"
+    }
+  }, [_vm._v("Uganda")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "UKR"
+    }
+  }, [_vm._v("Ukraine")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ARE"
+    }
+  }, [_vm._v("United Arab Emirates")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "GBR"
+    }
+  }, [_vm._v("United Kingdom")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "USA"
+    }
+  }, [_vm._v("United States")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "UMI"
+    }
+  }, [_vm._v("\n                      United States Minor Outlying Islands\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "URY"
+    }
+  }, [_vm._v("Uruguay")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "UZB"
+    }
+  }, [_vm._v("Uzbekistan")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VUT"
+    }
+  }, [_vm._v("Vanuatu")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VEN"
+    }
+  }, [_vm._v("\n                      Venezuela, Bolivarian Republic of\n                    ")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VNM"
+    }
+  }, [_vm._v("Viet Nam")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VGB"
+    }
+  }, [_vm._v("Virgin Islands, British")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "VIR"
+    }
+  }, [_vm._v("Virgin Islands, U.S.")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "WLF"
+    }
+  }, [_vm._v("Wallis and Futuna")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ESH"
+    }
+  }, [_vm._v("Western Sahara")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "YEM"
+    }
+  }, [_vm._v("Yemen")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ZMB"
+    }
+  }, [_vm._v("Zambia")]), _vm._v(" "), _c("option", {
+    attrs: {
+      value: "ZWE"
+    }
+  }, [_vm._v("Zimbabwe")])])]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Street Address "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "houseadd",
+      placeholder: "House number and street name",
+      required: ""
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v(" ")]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "apartment",
+      placeholder: "Apartment, suite, unit etc. (optional)"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Town / City "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "city"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("State / County "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "city"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Postcode / ZIP "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "text",
+      name: "city"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Phone "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "tel",
+      name: "city"
+    }
+  })]), _vm._v(" "), _c("label", [_c("span", [_vm._v("Email Address "), _c("span", {
+    staticClass: "required"
+  }, [_vm._v("*")])]), _vm._v(" "), _c("input", {
+    attrs: {
+      type: "email",
+      name: "city"
+    }
+  })])]), _vm._v(" "), _c("div", {
+    staticClass: "Yorder"
+  }, [_c("table", [_c("tr", [_c("th", {
+    attrs: {
+      colspan: "2"
+    }
+  }, [_vm._v("Your order")])]), _vm._v(" "), _c("tr", [_c("td", [_vm._v("Product Name x 2(Qty)")]), _vm._v(" "), _c("td", [_vm._v("$88.00")])]), _vm._v(" "), _c("tr", [_c("td", [_vm._v("Subtotal")]), _vm._v(" "), _c("td", [_vm._v("$88.00")])]), _vm._v(" "), _c("tr", [_c("td", [_vm._v("Shipping")]), _vm._v(" "), _c("td", [_vm._v("Free shipping")])])]), _vm._v(" "), _c("br"), _vm._v(" "), _c("div", [_c("input", {
+    attrs: {
+      type: "radio",
+      name: "dbt",
+      value: "dbt",
+      checked: ""
+    }
+  }), _vm._v(" Direct\n                  Bank Transfer\n                ")]), _vm._v(" "), _c("p", [_vm._v("\n                  Make your payment directly into our bank account. Please use\n                  your Order ID as the payment reference. Your order will not\n                  be shipped until the funds have cleared in our account.\n                ")]), _vm._v(" "), _c("div", [_c("input", {
+    attrs: {
+      type: "radio",
+      name: "dbt",
+      value: "cd"
+    }
+  }), _vm._v(" Cash on\n                  Delivery\n                ")]), _vm._v(" "), _c("div", [_c("input", {
+    attrs: {
+      type: "radio",
+      name: "dbt",
+      value: "cd"
+    }
+  }), _vm._v(" Paypal\n                  "), _c("span", [_c("img", {
+    attrs: {
+      src: "https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg",
+      alt: "",
+      width: "50"
+    }
+  })])]), _vm._v(" "), _c("button", {
+    attrs: {
+      type: "button"
+    }
+  }, [_vm._v("Place Order")])])])])])])])])]);
+}];
+render._withStripped = true;
+
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e ***!
@@ -5320,6 +6537,7 @@ Vue.use((cxlt_vue2_toastr__WEBPACK_IMPORTED_MODULE_0___default()), toastrConfigs
 Vue.component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
 Vue.component('add-to-cart-btn', (__webpack_require__(/*! ./components/AddToCardBtn.vue */ "./resources/js/components/AddToCardBtn.vue")["default"]));
 Vue.component('cart-menu', (__webpack_require__(/*! ./components/CartComponent.vue */ "./resources/js/components/CartComponent.vue")["default"]));
+Vue.component('checkout', (__webpack_require__(/*! ./components/CheckoutComponent.vue */ "./resources/js/components/CheckoutComponent.vue")["default"]));
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -27764,6 +28982,45 @@ component.options.__file = "resources/js/components/CartComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/CheckoutComponent.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/CheckoutComponent.vue ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CheckoutComponent_vue_vue_type_template_id_ed2d7008__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CheckoutComponent.vue?vue&type=template&id=ed2d7008 */ "./resources/js/components/CheckoutComponent.vue?vue&type=template&id=ed2d7008");
+/* harmony import */ var _CheckoutComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CheckoutComponent.vue?vue&type=script&lang=js */ "./resources/js/components/CheckoutComponent.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CheckoutComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CheckoutComponent_vue_vue_type_template_id_ed2d7008__WEBPACK_IMPORTED_MODULE_0__.render,
+  _CheckoutComponent_vue_vue_type_template_id_ed2d7008__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CheckoutComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue":
 /*!******************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue ***!
@@ -27835,6 +29092,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/CheckoutComponent.vue?vue&type=script&lang=js":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/CheckoutComponent.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckoutComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CheckoutComponent.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CheckoutComponent.vue?vue&type=script&lang=js");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckoutComponent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js":
 /*!******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js ***!
@@ -27881,6 +29154,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   staticRenderFns: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CartComponent_vue_vue_type_template_id_e7ab8a3c__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CartComponent_vue_vue_type_template_id_e7ab8a3c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CartComponent.vue?vue&type=template&id=e7ab8a3c */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CartComponent.vue?vue&type=template&id=e7ab8a3c");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CheckoutComponent.vue?vue&type=template&id=ed2d7008":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/CheckoutComponent.vue?vue&type=template&id=ed2d7008 ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckoutComponent_vue_vue_type_template_id_ed2d7008__WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   staticRenderFns: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckoutComponent_vue_vue_type_template_id_ed2d7008__WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CheckoutComponent_vue_vue_type_template_id_ed2d7008__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CheckoutComponent.vue?vue&type=template&id=ed2d7008 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CheckoutComponent.vue?vue&type=template&id=ed2d7008");
 
 
 /***/ }),

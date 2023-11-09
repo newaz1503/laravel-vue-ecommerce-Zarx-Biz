@@ -36,6 +36,7 @@
     
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{asset('front/css/')}}/style.css">
+    <link rel="stylesheet" href="{{asset('front/css/')}}/checkout.css">
     
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{asset('front/css/')}}/responsive.css">

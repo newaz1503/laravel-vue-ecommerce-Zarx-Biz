@@ -24,6 +24,7 @@ Route::group(['middleware'=>'auth'],function(){
     Route::post('/add-to-cart', [FrontendController::class, 'addToCart'])->name('add.cart');
     Route::get('/total-cart-item', [FrontendController::class, 'getTotalCartItem'])->name('total.cart.item');
     Route::get('/checkout', [FrontendController::class, 'checkout'])->name('checkout');
+    Route::get('/cart-items', [FrontendController::class, 'cartItem'])->name('cart.items');
 });
 Auth::routes();
 
